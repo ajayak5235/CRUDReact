@@ -74,7 +74,7 @@ res.send({success:true,message:"deleted succefully",data})
 })
 
 
-const PORT = process.env.PORT || 4000
+const PORT = process.env.PORT || 3000
 
 mongoose.connect("mongodb://localhost:27017/crud").then(()=>{
     console.log('connecte to db')
