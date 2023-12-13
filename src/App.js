@@ -66,8 +66,6 @@ const handleDelete = async(id)=>{
     getFetchData()
     alert(data.data.message)
   }
-  
-
 }
 
 const handleUpdate = async(e)=>{
@@ -133,7 +131,6 @@ const handleEdit = (el)=>{
 
           </tr>
         </thead>
-        
          
         {
   dataList[0] ? (
@@ -162,18 +159,6 @@ const handleEdit = (el)=>{
     </tbody>
   )
 }
-
-
-
-
-
-
-
-
-
-
-
-
       </table>
     </div>
     
@@ -188,52 +173,3 @@ export default App;
 
 
 
-// import React, { useState } from 'react';
-// import { MdClose } from 'react-icons/md';
-// import './App.css';
-
-// function App() {
-//   const [addSection, setAddSection] = useState(false);
-
-//   const handleSubmit = (e) => {
-//     e.preventDefault();
-//     // Add your form submission logic here
-//   };
-
-//   return (
-//     <>
-//       <div className="container">
-//         <button
-//           className="btn btn-add"
-//           onClick={() => setAddSection(!addSection)}
-//         >
-//           Add
-//         </button>
-
-//         {addSection && (
-//           <div className="addContainer">
-//             <div className="close-btn" onClick={() => setAddSection(false)}>
-//               <MdClose />
-//             </div>
-//             <form onSubmit={handleSubmit}>
-//               <label htmlFor="name">Name:</label>
-//               <input type="text" id="name" name="name" />
-
-//               <label htmlFor="email">Email:</label>
-//               <input type="text" id="email" name="email" />
-
-//               <label htmlFor="mobile">Mobile No:</label>
-//               <input type="number" id="mobile" name="mobile" />
-
-//               <button className="btn" type="submit">
-//                 Submit
-//               </button>
-//             </form>
-//           </div>
-//         )}
-//       </div>
-//     </>
-//   );
-// }
-
-// export default App;
